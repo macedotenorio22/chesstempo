@@ -44,8 +44,8 @@ var Client = IgeClass.extend({
 				// Create an isometric tile map
 				self.tileMap1 = new IgeTileMap2d()
 					.id('tileMap1')
-					.tileWidth(40)
-					.tileHeight(40)
+					.tileWidth(70)
+					.tileHeight(70)
 					.drawGrid(3)
 					.gridSize(8,8)
 					.drawMouse(true)
