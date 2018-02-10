@@ -53,6 +53,7 @@ var Client = IgeClass.extend({
 					.tileWidth(40)
 					.tileHeight(40)
 					.drawGrid(3)
+					.gridSize(8, 8)
 					.drawMouse(true)
 					.drawBounds(false)
 					.drawBoundsData(false)
@@ -76,15 +77,15 @@ var Client = IgeClass.extend({
 
 				// Create the 3d container that the player
 				// entity will be mounted to
-				self.player = new Character()
-					.id('player')
-					.addComponent(PlayerComponent)
-					.isometric(true)
-					.mouseOver(overFunc)
-					.mouseOut(outFunc)
-					.drawBounds(false)
-					.drawBoundsData(false)
-					.mount(self.tileMap1);
+				// self.player = new Character()
+				// 	.id('player')
+				// 	.addComponent(PlayerComponent)
+				// 	.isometric(true)
+				// 	.mouseOver(overFunc)
+				// 	.mouseOut(outFunc)
+				// 	.drawBounds(false)
+				// 	.drawBoundsData(false)
+				// 	.mount(self.tileMap1);
 
 				// Create a UI entity so we can test if clicking the entity will stop
 				// event propagation down to moving the player. If it's working correctly

@@ -47,8 +47,9 @@ var Client = IgeClass.extend({
 					.tileWidth(40)
 					.tileHeight(40)
 					.drawGrid(3)
+					.gridSize(8,8)
 					.drawMouse(true)
-					.drawBounds(false)
+					.drawBounds(true)
 					.mount(self.objectScene);
 
 				// Define a function that will be called when the
@@ -67,15 +68,15 @@ var Client = IgeClass.extend({
 					this.drawBoundsData(false);
 				};
 
-				self.player = new Character()
-					.id('player')
-					.addComponent(PlayerComponent)
-					.drawBounds(false)
-					.drawBoundsData(false)
-					.setType(3)
-					.mouseOver(overFunc)
-					.mouseOut(outFunc)
-					.mount(self.tileMap1);
+				// self.player = new Character()
+				// 	.id('player')
+				// 	.addComponent(PlayerComponent)
+				// 	.drawBounds(false)
+				// 	.drawBoundsData(false)
+				// 	.setType(3)
+				// 	.mouseOver(overFunc)
+				// 	.mouseOut(outFunc)
+				// 	.mount(self.tileMap1);
 
 				// Create a UI entity so we can test if clicking the entity will stop
 				// event propagation down to moving the player. If it's working correctly
